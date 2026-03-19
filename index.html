@@ -19,8 +19,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>ダッカ首都圏建築規則 2025 / ঢাকা মহানগর ইমারত বিধিমালা, ২০২৫</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600&family=Noto+Serif+JP:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<!-- 游ゴシック / Yu Gothic はiOS・macOS・Windowsのシステムフォント。外部読み込み不要 -->
 <style>
 :root {
   --bg:       #f5f4f0;
@@ -33,9 +32,9 @@
   --toc-bg:   #f0eeea;
   --toc-w:    280px;
   --header-h: 56px;
-  --font-jp:  'Noto Serif JP', serif;
-  --font-bn:  'Noto Sans Bengali', sans-serif;
-  --font-mono:'IBM Plex Mono', monospace;
+  --font-jp:  'YuGothic', 'Yu Gothic', '游ゴシック', -apple-system, 'Helvetica Neue', sans-serif;
+  --font-bn:  'Noto Sans Bengali', 'YuGothic', 'Yu Gothic', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Menlo', 'Consolas', monospace;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -44,8 +43,8 @@ body {
   font-family: var(--font-jp);
   background: var(--bg);
   color: var(--text);
-  font-size: 14px;
-  line-height: 1.8;
+  font-size: 15px;
+  line-height: 1.9;
 }
 
 /* ─── HEADER ─── */
@@ -69,7 +68,7 @@ body {
   border: 1.5px solid rgba(255,255,255,.5); border-radius: 6px; overflow: hidden;
 }
 .lang-btn {
-  padding: 5px 14px; font-size: 12px; font-weight: 600;
+  padding: 5px 14px; font-size: 13px; font-weight: 600;
   cursor: pointer; border: none; background: transparent; color: rgba(255,255,255,.65);
   transition: background .15s, color .15s;
   font-family: var(--font-mono);
@@ -165,35 +164,35 @@ body:not(.lang-bn) .page-gazette { font-family: var(--font-jp); font-size: 11px;
 body.lang-bn .content { font-family: var(--font-bn); font-size: 14.5px; }
 
 .content h2.h-lv2 {
-  font-size: 13px; font-weight: 700; letter-spacing: .04em;
+  font-size: 14px; font-weight: 600; letter-spacing: .03em;
   color: var(--accent); text-transform: none;
   padding: 20px 0 4px; margin-bottom: 2px;
   border-top: 1px solid var(--border);
 }
 .content h3.h-lv3 {
-  font-size: 13.5px; font-weight: 700;
+  font-size: 14px; font-weight: 600;
   color: var(--accent2);
   padding: 14px 0 4px;
 }
 .content h4.h-lv4 {
-  font-size: 14px; font-weight: 700;
+  font-size: 15px; font-weight: 600;
   color: var(--text);
   margin: 18px 0 8px;
   padding-left: 10px;
   border-left: 3px solid var(--accent);
 }
 .content h5.h-lv5 {
-  font-size: 13.5px; font-weight: 400;
-  margin: 6px 0 4px; padding-left: 20px;
+  font-size: 14.5px; font-weight: 400;
+  margin: 7px 0 5px; padding-left: 20px;
   color: var(--text);
 }
 .content h6.h-lv6 {
-  font-size: 13px; font-weight: 400;
-  margin: 4px 0; padding-left: 36px;
+  font-size: 14px; font-weight: 400;
+  margin: 5px 0; padding-left: 36px;
   color: var(--text);
 }
 .content p {
-  font-size: 13.5px; margin: 5px 0 5px 20px;
+  font-size: 14.5px; margin: 6px 0 6px 20px;
   color: var(--text);
 }
 .content p.list-item { padding-left: 36px; text-indent: -14px; }
@@ -230,7 +229,7 @@ body.lang-bn .content { font-family: var(--font-bn); font-size: 14.5px; }
 }
 .nav-btn {
   display: inline-flex; align-items: center; gap: 6px;
-  padding: 8px 16px; font-size: 12.5px; font-weight: 600;
+  padding: 8px 16px; font-size: 13px; font-weight: 500;
   color: var(--accent); border: 1.5px solid var(--accent);
   border-radius: 4px; cursor: pointer; background: none;
   text-decoration: none; transition: all .15s;
